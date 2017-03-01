@@ -2,6 +2,8 @@ html body
   padding: 0
   margin: 0
   overflow-x: hidden
+  font-family: Verdana, Arial, Helvetica, sans-serif
+
 
 // .col-sm-3
   border: 1px red solid
@@ -18,51 +20,10 @@ body::-webkit-scrollbar-thumb
   background-color: #000000
   border: 1px solid #555555
 
-body
-  font-family: Verdana, Arial, Helvetica, sans-serif
+.nav
+  padding-top: 5%
 
-.col-xs-6
-  width: auto
-
-.container-fluid
-  padding: 0
-  margin: 0
-
-nav
-  position: center
-  top: 90%
-  width: 100%
-  size: cover
-  text-align: center
-  ul
-    display: inline-block
-    li
-      float: right
-      padding: 50px
-
-nav
-  ul li a
-    display: inline-block
-    position: relative
-    padding-bottom: 2px
-    text-decoration: none
-    &:hover
-      text-decoration: none
-  ul li a::after
-    content: ''
-    display: block
-    margin: auto
-    height: 3px
-    width: 0px
-    background: transparent
-    transition: width .5s ease, background-color .5s ease
-  ul li a:hover::after
-    border: none
-    width: 100%
-    background: black
-
-
-.jumbotron
+.container-fluid, .jumbotron
   padding: 0
   margin: 0
 
@@ -78,6 +39,8 @@ div.jumbotron
 
 
 footer.jumbotron
+  background-color: #565656
+  color: white
   height: 35vh
   size: cover
   position: center
@@ -91,7 +54,11 @@ footer.jumbotron
   flex-direction: column
   justify-content: center
   text-align: center
-  margin-bottom: 50px
+  margin: 0 50px 50px 50px
+
+.flavor
+  background-color: #EFEFEF
+  padding: 50px
 
 ul
   padding: 0
