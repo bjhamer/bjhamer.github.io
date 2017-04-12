@@ -4,7 +4,7 @@ html body
   overflow-x: hidden
   font-family: Verdana, Arial, Helvetica, sans-serif
 
-// .col-sm-3, .col-md-6
+// .col-sm-3, .col-sm-6, .row
 //   border: 1px red solid
 
 body::-webkit-scrollbar
@@ -25,6 +25,10 @@ body::-webkit-scrollbar-thumb
   padding-top: 5%
 
 .container-fluid, .jumbotron
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
   padding: 0
   margin: 0
 
@@ -41,7 +45,8 @@ div.jumbotron
 footer.jumbotron
   background-color: #565656
   color: white
-  height: 100vh
+  height: 50vh
+  width: 100%
   size: cover
   position: center
   display: flex
@@ -52,13 +57,21 @@ footer.jumbotron
 .row
   display: flex
   flex-direction: column
+  align-items: center
   justify-content: center
-  text-align: center
-  margin: 0 5% 50px 5%
+  // margin: 0 25% 50px 25%
+  max-width: 960px
+
 
 .flavor
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
   background-color: #EFEFEF
   padding: 50px
+  width: 100%
+
 
 ul
   padding: 0
@@ -69,10 +82,14 @@ ul
     padding: 0
     margin: 0
 
+.skills
+  width: 240px
+
 img
   height: 200px
   width: 200px
   float: none
+  padding: 0 0 50px 0
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
   .row
