@@ -14,21 +14,22 @@
 
 <body>
     <div class="container-fluid">
-        <div id="canvas" class="jumbotron">
+        <div id="parallax" class="jumbotron">
             <h1 class="">Brad Hamer</h1>
             <h2>Front-End Developer & Designer</h2>
             <!--Scrolling through Developer & Designer-->
             <ul class="nav nav-tabs nav-justified">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Abilities</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Abilities">Abilities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
             </ul>
         </div>
         <br />
+        <a href="#canvas"><span class="glyphicon glyphicon-triangle-top" id="top"></span></a>
         <br />
-        <div class="row">
+        <div class="row" id="About">
             <ul>
                 <li class="col-sm-6 text-justify">
                     <h2>About Me</h2>
@@ -39,7 +40,7 @@
             </ul>
         </div>
         <div class="flavor">
-            <div class="row">
+            <div class="row" id="Education">
                 <!--EDUCATION & EXPERIENCE-->
                 <h2>Education</h2>
                 <div>
@@ -53,13 +54,8 @@
                             <p>My education was mainly Web Design and User Experience, but I also learned about SASS, ReactJS, Ruby, and more. During my time in college, I spent expanding my Front-End Development knowledge outside of class</p>
                             <span class="glyphicon glyphicon-map-marker"> Madison, SD</span>
                         </li>
-                    </ul>
-                </div>
-                <h2>Experience</h2>
-                <div>
-                    <ul>
                         <li class="col-sm-6 text-justify">
-                            <p><strong>Brandon Valley</strong></p>
+                            <p><strong>Brandon Valley High School</strong></p>
                             <p>Aug 2009 - May 2013</p>
                         </li>
                         <li class="col-sm-6 text-justify">
@@ -69,10 +65,38 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="row">
+                    <h2>Experience</h2>
+                    <div>
+                        <ul>
+                            <li class="col-sm-6 text-justify">
+                                <p><strong>Dakota State University</strong></p>
+                                <p>Publishing For New Media</p>
+                                <p>Mar 2017 - OnGoing</p>
+                            </li>
+                            <li class="col-sm-6 text-justify">
+                                <p><strong>Front-End Developer & Designer Volunter</strong></p>
+                                <p>Through the use of Bootstrap and SASS I created and maintained the classes publication New Tricks 2017 website.  I also reworked their old landing page into a more user friendly more modern version. </p>
+                                <span class="glyphicon glyphicon-map-marker"> Madison, SD</span>
+                            </li>
+                            <li class="col-sm-6 text-justify">
+                                <p><strong>Brandon Valley High School</strong></p>
+                                <p>Independent Study</p>
+                                <p>Aug 2012 - May 2013</p>
+                            </li>
+                            <li class="col-sm-6 text-justify">
+                                <p><strong>Front-End Developer & Designer</strong></p>
+                                <p>As the Web Master I was responsible of keeping the website up to date. During the job I also worked to make the website more user friendly for visitors.</p>
+                                <span class="glyphicon glyphicon-map-marker"> Brandon, SD</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="Projects">
             <!--PROJECTS-->
             <h2>Projects</h2>
             <div class="row">
@@ -87,7 +111,7 @@
             </div>
         </div>
         <div class="flavor">
-            <div class="row">
+            <div class="row" id="Abilities">
                 <!--SKILLS-->
                 <h2>Skills</h2>
                 <div class="text-justify">
@@ -217,15 +241,26 @@
             </div>
         </div>
 
-        <footer class="jumbotron">
-          <div class="row">
-            <h2>Get In Contact</h2>
-            <br />
-            <br />
+        <footer class="jumbotron" id="Contact">
+            <div class="row">
+                <h2>Get In Contact</h2>
+                <br />
+                <br />
         </footer>
-    </div>
-    <script src="./js/scripts.js" type="text/javascript" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./js/scripts.js" type="text/javascript" />
+        <script>
+        // $("p").on({
+        //   mouseenter: function() {
+        //     $(this).css("font-size", "64px");
+        //   },
+        //   mouseleave: function() {
+        //     $(this).css("font-size", "12px");
+        //   }
+        // });
+        </script>
 </body>
 
 </html>
