@@ -104,8 +104,12 @@
                     <li class="col-sm-3">
                         <a href="./Projects/voting_app/index.html"><img class="img-responisve img-thumbnail" src="./images/Project1-Voting-App.PNG" alt="thumnail" /></a>
                     </li>
-                    <li class="col-sm-3"><img class="img-responisve img-thumbnail" src="#" alt="thumnail" /></li>
-                    <li class="col-sm-3"><img class="img-responisve img-thumbnail" src="#" alt="thumnail" /></li>
+                    <li class="col-sm-3">
+                      <a href="http://www.new-tricks.org/" target="_blank"><img class="img-responisve img-thumbnail" src="./images/Project2-New-Tricks.PNG" alt="thumnail" /></a>
+                    </li>
+                    <li class="col-sm-3">
+                      <img class="img-responisve img-thumbnail" src="#" alt="thumnail" />
+                    </li>
                     <li class="col-sm-3"><img class="img-responisve img-thumbnail" src="#" alt="thumnail" /></li>
                 </ul>
             </div>
@@ -163,7 +167,6 @@
                             <span class="glyphicon glyphicon-star pull-right"></span>
                         </li>
                         <li>ReactJS
-                            <span class="glyphicon glyphicon-star pull-right"></span>
                             <span class="glyphicon glyphicon-star pull-right"></span>
                             <span class="glyphicon glyphicon-star pull-right"></span>
                         </li>
@@ -241,11 +244,52 @@
             </div>
         </div>
 
-        <footer class="jumbotron" id="Contact">
+        <footer id="Contact">
             <div class="row">
                 <h2>Get In Contact</h2>
-                <br />
-                <br />
+                <form class="form-horizontal" method="POST" action="form-handler" onsubmit="return checkForm(this);">
+                  <div class="form-group">
+                    <label for="fname" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="fname" placeholder="First Name" required />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="lname" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="lname" placeholder="Last Name" required />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="Email" required />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Messgae</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <p>
+                        <img src="./contactForm/captcha.php" width="120" height="30" border="1" alt="CAPTCHA" />
+                        <small><a href="#" onlick="
+                          document.getElementById('capthca').src = './contactForm/captcha.php' + Math.random();
+                          document.getElementById('capthca_code').value = '';
+                          return false;
+                          ">refresh</a></small></p>
+                      <p>
+                        <input type="text" id="capthca_code" class="form-control" size="6" maxlength="5" onkeyup="this.value = this.value.replace(/[^\d]+/g, '');" name="capthca" value="">
+                      </p>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Send</button>
+                    </div>
+                  </div>
+                </form>
         </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
