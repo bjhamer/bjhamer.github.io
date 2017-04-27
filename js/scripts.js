@@ -5,12 +5,3 @@ window.addEventListener('scroll', function() {
     $('#top').css("display", "none");
   }
 });
-
-// funciton checkFrom(form) {
-//   if(!form.capthca.value.match(/^\d{5}$/)) {
-//     alert("Please enter the CAPTCHA digits in the box provided");
-//     form.catpcha.focus();
-//     return false;
-//   }
-//   return true;
-// }
